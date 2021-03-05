@@ -1,68 +1,105 @@
 @charset "UTF-8";
 
 * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: justify;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(to right, #A62190, #4A1B8C);
+    background-color: #ffffff;
     background-attachment: fixed;
+    height: 100vh;
 }
 
-body > header {
-    background: #6a00ff71;
+.header {
+    background: #6a00ff7e;
     display: flex;
-    flex-flow: row nowrap;
-    gap: 1rem;
-    padding: 1.5rem 5rem;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    border: 10px;
+    padding: 15px;
+    gap: 10px;
 }
 
-body > header > img {
-    width: auto;
-    height: 3rem;
-}
-
-body > header > nav {
+.header nav {
     flex: 1;
     display: flex;
     gap: 2rem;
     justify-content: flex-end;
 }
 
-body > header > nav a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffffff;
+.menu {
+    display: flex;
 }
 
-body > main {
-    background-color: #ffffff;
-    width: 800px;
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #31005f;
+    color: #a62190d0;
+    border-radius: 5px;
+}
+
+.header img {
+    width: auto;
+    height: 3rem;
+}
+
+main {
+    background-image: linear-gradient(to right, #6a00ff7e, #4a1b8ca9);
+    width: 90%;
+    max-width: 800px;
     padding: 10px;
     margin: auto;
     border-radius: 15px;
     box-shadow: 4px 4px 4px #000000;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-}
-
-h2 {
-    text-align: center;
+    height: auto;
+    color: #ffffff;
 }
 
 p {
-    text-align: justify;
+    color: #ffffff;
 }
 
-body > footer > p {
-    color: #ffffff;
+footer p {
+    color: #000000;
     font-style: italic;
     text-align: center;
+    margin-top: 15px;
+}
+
+.boasvindas {
+    border-bottom: 10px;
+}
+
+.exercicios {
+    
+}
+
+.listae li {
+    margin-top: 10px;
+}
+
+.listae li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
 }
